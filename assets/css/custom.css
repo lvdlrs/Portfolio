@@ -140,7 +140,7 @@ em{
   height: auto;
 }
 
-.jumbotron{
+#top .jumbotron{
 	background: no-repeat center right fixed url("../../img/top-bg.jpg");
 	-webkit-background-size: cover;
 	        background-size: cover;

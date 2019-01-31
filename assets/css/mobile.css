@@ -142,7 +142,7 @@
 		font-size: 1.5rem;
 	}
 
-	.jumbotron{
+	#top .jumbotron{
 		background: no-repeat fixed url("../../img/top-bg-sm.jpg");
 		-webkit-background-size: cover;
 		        background-size: cover;
