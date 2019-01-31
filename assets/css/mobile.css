@@ -1,11 +1,10 @@
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px)
 {
-	.container{
+	.container, #top .container{
 		padding-left: 60px;
 		padding-right: 60px;
 	}
-
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) 
@@ -21,13 +20,25 @@
 	.display-2{
 		font-size: 4rem;
 	}
+
+	.font2{
+		font-size: 1.25rem;
+	}
 	.container{
 		padding-left: 60px;
 		padding-right: 60px;
 	}
 
+	#top .jumbotron{
+		background: no-repeat fixed url("../../img/top-bg-sm.jpg");
+		-webkit-background-size: cover;
+		        background-size: cover;
+		        background-position: center center;
+		        padding-top: 120px;
+	}
+
 	#top .container{
-		padding-left: 50px;
+		text-align: center;
 	}
 }
 
@@ -40,7 +51,7 @@
 		        transition: all 0.5s ease-in-out;
 	}
 	.display-1{
-		font-size: 4.5rem;
+		font-size: 4rem;
 	}
 	.display-2{
 		font-size: 3rem;
@@ -61,15 +72,9 @@
 		text-align: center;
 	}
 
-	.container{
+	.container, #top .container{
 		padding-left: 60px;
 		padding-right: 60px;
-	}
-
-	#top .container{
-		margin-top: 80px;
-		padding-right: 40px;
-		padding-left: 40px;
 	}
 
 	#top .mbet-sm{
@@ -78,9 +83,11 @@
 	}
 
 	.jumbotron{
-		background: no-repeat center center fixed url("../../img/top-bg-sm.jpg");
+		background: no-repeat fixed url("../../img/top-bg-sm.jpg");
 		-webkit-background-size: cover;
 		        background-size: cover;
+		        background-position: top 0px left -145px;
+		        padding-top: 100px;
 	}
 
 	#what-i-do .img-fluid{
@@ -96,7 +103,7 @@
 		padding-left: 40px;
 	}
 	.display-1{
-		font-size: 4.5rem;
+		font-size: 3rem;
 	}
 	.display-2, .display-4{
 		font-size: 2.5rem;
@@ -118,32 +125,47 @@
 	}
 	
 	#top .container{
-		margin-top: 60px;
 		padding-right: 40px;
 		padding-left: 40px;
 	}
 
 	#top .font2{
-		font-size: 1rem;
-		line-height: 100%;
+		font-size: 1.25rem;
 	}
+
 	#top .mbet-sm{
-		margin-top: 15px;
-		margin-bottom: 15px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#top .lead{
+		font-size: 1.5rem;
 	}
 
 	.jumbotron{
 		background: no-repeat fixed url("../../img/top-bg-sm.jpg");
 		-webkit-background-size: cover;
 		        background-size: cover;
-		background-position: top 0px left -250px;
+		background-position: center center;
+		padding-top: 120px;
+	}
+
+	#what-i-do{
+		margin-bottom: 60px;
 	}
 	#what-i-do .img-fluid{
-		height: 400px;
+		height: 300px;
 	}
 
 	#verse{
 		margin-top: 40px;
 		margin-bottom: 40px;
+	}
+
+	#verse .font4{
+		font-size: 1.5rem;
+	}
+	#verse .font2{
+		font-size: 1rem;
 	}
 }

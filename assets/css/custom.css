@@ -27,6 +27,10 @@ hr{
 	width: 50%;
 }
 
+em{
+	font-style: italic;
+}
+
 .animated{
 	-webkit-animation-duration: 1.5s;
 	        animation-duration: 1.5s;
@@ -90,15 +94,23 @@ hr{
 	line-height: 120%;
 }
 
+.font4{
+	font-size: 2rem;
+}
+
 /*top*/
 #top .top-dur{
 	-webkit-animation-duration: 3s;
 	        animation-duration: 3s;
 }
+#top .lead{
+	font-size: 2rem;
+}
 #top .container{
 	padding-left: 100px;
 	padding-right: 100px;
 }
+
 #top .row{
 	margin-right: 0;
 	margin-left: 0;
@@ -133,6 +145,7 @@ hr{
 	-webkit-background-size: cover;
 	        background-size: cover;
 	margin-bottom: 0;
+	padding-top: 200px;
 }
 
 .pos{
@@ -168,14 +181,13 @@ hr{
 	        box-shadow: 5px 5px 15px 0px #2B3F36;
 }
 
-/*verse*/
+/*quotation*/
 .text-box{
   -webkit-border-radius: 2px;
           border-radius: 2px;
   padding: 10px 20px;
   background-color: #fff;
-  max-height: 200px;
-  height: 100%;
+  height: auto;
   -webkit-filter: drop-shadow(10px 8px 6px darkslategray);
           filter: drop-shadow(10px 8px 6px darkslategray);
 }
