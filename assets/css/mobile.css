@@ -7,16 +7,14 @@
 	}
 }
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) 
+@media (min-width: 768px) and (max-width: 991.98px)
 {
 	*{
 		-webkit-transition: all 0.5s ease-in-out;
 			 -o-transition: all 0.5s ease-in-out;
 			    transition: all 0.5s ease-in-out;
 	}
-	.display-1{
-		font-size: 4.75rem;
-	}
+
 	.display-2{
 		font-size: 4rem;
 	}
@@ -39,12 +37,13 @@
 
 	#top .container{
 		text-align: center;
+		padding-left: 60px;
+		padding-right: 60px;
 	}
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) 
-{	
+@media (min-width: 576px) and (max-width: 767.98px){	
 	*{
 		-webkit-transition: all 0.5s ease-in-out;
 		     -o-transition: all 0.5s ease-in-out;
@@ -82,12 +81,12 @@
 		margin-bottom: 15px;
 	}
 
-	.jumbotron{
-		background: no-repeat fixed url("../../img/top-bg-sm.jpg");
-		-webkit-background-size: cover;
-		        background-size: cover;
-		        background-position: top 0px left -145px;
-		        padding-top: 100px;
+	#top .jumbotron{
+	background: no-repeat fixed url("../../img/top-bg-sm.jpg");
+	-webkit-background-size: cover;
+	        background-size: cover;
+	        background-position: top 0px left -145px;
+	        padding-top: 100px;
 	}
 
 	#what-i-do .img-fluid{
@@ -96,14 +95,14 @@
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) 
+@media (max-width: 575px)
 {
 	.container{
-		padding-right: 40px;
-		padding-left: 40px;
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 	.display-1{
-		font-size: 3rem;
+		font-size: 2.9rem;
 	}
 	.display-2, .display-4{
 		font-size: 2.5rem;
@@ -125,12 +124,12 @@
 	}
 	
 	#top .container{
-		padding-right: 40px;
-		padding-left: 40px;
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 
 	#top .font2{
-		font-size: 1.25rem;
+		font-size: 1rem;
 	}
 
 	#top .mbet-sm{
@@ -146,7 +145,7 @@
 		background: no-repeat fixed url("../../img/top-bg-sm.jpg");
 		-webkit-background-size: cover;
 		        background-size: cover;
-		background-position: center center;
+		background-position: top 0px left 45%;
 		padding-top: 120px;
 	}
 
@@ -155,6 +154,14 @@
 	}
 	#what-i-do .img-fluid{
 		height: 300px;
+	}
+
+	#what-i-do .display-3{
+		font-size: 2.5rem;
+	}
+
+	#about-me .font2{
+		font-size: 1.25rem;
 	}
 
 	#verse{

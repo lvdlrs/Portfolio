@@ -149,11 +149,11 @@ em{
 }
 
 .pos{
-	top: 80%;
+	top: 75%;
 	left: 50%;
-	-webkit-transform: translate(-50%, 80%);
-	    -ms-transform: translate(-50%, 80%);
-	        transform: translate(-50%, 80%);
+	-webkit-transform: translate(-50%, 75%);
+	    -ms-transform: translate(-50%, 75%);
+	        transform: translate(-50%, 75%);
 }
 
 /*about*/
