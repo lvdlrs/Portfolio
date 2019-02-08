@@ -251,24 +251,41 @@
 						      </div>
 						      
 						      <div class="modal-body text-left">
-							       <form id="formSubmit" name="contact" method="POST" date-netlify="true">
-											<div class="form-group">
-                                    <label for="name"> Name:</label>
-                                    <input type="text" class="form-control" placeholder="Hello, my friend" id="name" required maxlength="50" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email"> Email:</label>
-                                    <input type="email" class="form-control" placeholder="I will contact you with this email" id="email" required maxlength="50" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"> Message:</label>
-                                    <textarea class="form-control" type="textarea" id="message" placeholder="Thank you so much for giving your time messaging me." maxlength="6000" rows="7"></textarea>
-                                </div>
+							  <!--     <form id="formSubmit" name="contact" method="POST" date-netlify="true">-->
+									<!--		<div class="form-group">-->
+         <!--                           <label for="name"> Name:</label>-->
+         <!--                           <input type="text" class="form-control" placeholder="Hello, my friend" id="name" required maxlength="50" required>-->
+         <!--                       </div>-->
+         <!--                       <div class="form-group">-->
+         <!--                           <label for="email"> Email:</label>-->
+         <!--                           <input type="email" class="form-control" placeholder="I will contact you with this email" id="email" required maxlength="50" required>-->
+         <!--                       </div>-->
+         <!--                       <div class="form-group">-->
+         <!--                           <label for="name"> Message:</label>-->
+         <!--                           <textarea class="form-control" type="textarea" id="message" placeholder="Thank you so much for giving your time messaging me." maxlength="6000" rows="7"></textarea>-->
+         <!--                       </div>-->
                                 
-                                <div class="modal-footer">
-									        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									        <button type="submit" class="btn btn-primary" data>Send</button>
-									     </div>
+         <!--                       <div class="modal-footer">-->
+									<!--        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+									<!--        <button type="submit" class="btn btn-primary" data>Send</button>-->
+									<!--     </div>-->
+									<!--</form>-->
+									
+									<form name="contact" method="POST" data-netlify="true">
+									  <div class="form-group">
+									    <label>Your Name:</label>
+									    <input type="text" name="name" />  
+									  </di>
+									  <div class="form-group">
+									    <label>Your Email:</label>
+									    <input type="email" name="email" />
+									  <div class="form-group">
+									    <label>Message: </label>
+									    <textarea name="message"></textarea>
+									  </div>
+									  <p>
+									    <button type="submit">Send</button>
+									  </p>
 									</form>
 						      </div>
 						    </div>
