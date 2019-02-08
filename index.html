@@ -36,7 +36,6 @@
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	
 </head>
 <body>
 	<!-- header start-->
@@ -236,58 +235,51 @@
 			   		<h2 id="contact-head" class="display-3 text-center text-shadow mb-3 animated disappear">Contact Me</h2>
 				   	<h3 id="contact-subhead" class="display-2 animated disappear">Let's Work Together</h3>
 				   	
-						<a href="formpage.html" id="contact-mail" class="btn btn-outline-primary my-3 animated disappear" data-toggle="modal" data-target="#myModal">
+						<button id="contact-mail" type="button" class="btn btn-outline-primary my-3 animated disappear" data-toggle="modal" data-target="#myModal">
 						  <i class="far fa-envelope"></i> Send me a message
-						</a>
-						
-						 <a href="formpage.html" class="li-modal">Lab 6</a>
-						
-						<div class="modal fade text-center" id="theModal">
-						  <div class="modal-dialog">
-						    <div class="modal-content">
-						    </div>
-						  </div>
-						</div>
+						</button>
 						
 						 <!--Modal -->
-						<!--<div class="modal fade" id="myModal">-->
-						<!--  <div class="modal-dialog">-->
-						<!--    <div class="modal-content">-->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
 						    	
-						      <!--<div class="modal-header">-->
-						      <!--  <h5 class="modal-title" id="exampleModalLabel">Send me a Message!</h5>-->
-						      <!--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-						      <!--    <span aria-hidden="true">&times;</span>-->
-						      <!--  </button>-->
-						      <!--</div>-->
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel">Send me a Message!</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
 						      
-					      	<!--<div class="modal-body text-left">-->
-         <!--						<form action="" name="contact" method="POST" data-netlify="true">-->
-						   <!--        <div class="form-group">-->
-									<!--    <label> Name:</label>-->
-									<!--    <input type="text" name="name" class="form-control" placeholder="Hello, my friend" id="name" name="name" required maxlength="50"/>  -->
-									<!--  </div>-->
-									<!--  <div class="form-group">-->
-									<!--    <label> Email:</label>-->
-									<!--    <input type="email" name="email" class="form-control" placeholder="I will contact you with this email" required maxlength="50"/>-->
-									<!--  </div>-->
-									<!--  <div class="form-group">-->
-									<!--    <label> Message:</label>-->
-									<!--    <textarea name="message" class="form-control" placeholder="Thank you so much for giving your time messaging me." maxlength="6000" rows="7"></textarea>-->
-									<!--  </div>-->
+					      	<div class="modal-body text-left">
+					      		            <script src='https://www.google.com/recaptcha/api.js'></script>
+
+         						<form action="" name="contact" method="POST" data-netlify="true">
+						           <div class="form-group">
+									    <label> Name:</label>
+									    <input type="text" name="name" class="form-control" placeholder="Hello, my friend" id="name" name="name" required maxlength="50"/>  
+									  </div>
+									  <div class="form-group">
+									    <label> Email:</label>
+									    <input type="email" name="email" class="form-control" placeholder="I will contact you with this email" required maxlength="50"/>
+									  </div>
+									  <div class="form-group">
+									    <label> Message:</label>
+									    <textarea name="message" class="form-control" placeholder="Thank you so much for giving your time messaging me." maxlength="6000" rows="7"></textarea>
+									  </div>
 									  
-									<!--  <div data-netlify-recaptcha="true"></div>-->
+                        <div class="g-recaptcha" data-sitekey="6LcCIpAUAAAAAOyREZOBYYT6IXGqhdERqG7qYN_m"></div>
 									  
-	        <!--                  <div class="modal-footer">-->
-								 <!--       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-								 <!--       <button type="submit" class="btn btn-primary" data>Send</button>-->
-								 <!--    </div>-->
-									<!--</form>-->
-						     <!--</div>-->
+	                          <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								        <button type="submit" class="btn btn-primary" data>Send</button>
+								     </div>
+									</form>
+						     </div>
 						     
-							<!--</div>-->
-						 <!--</div>-->
-					  <!--</div>-->
+							</div>
+						 </div>
+					  </div>
 					 
 				
 				<div id="contact-links" class="row mt-2 d-flex justify-content-center animated disappear">
