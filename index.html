@@ -234,6 +234,27 @@
 			   <div class="text-center mt-2">
 			   		<h2 id="contact-head" class="display-3 text-center text-shadow mb-3 animated disappear">Contact Me</h2>
 				   	<h3 id="contact-subhead" class="display-2 animated disappear">Let's Work Together</h3>
+				   	
+				   	<form name="contact" method="POST" data-netlify="true">
+						  <p>
+						    <label>Your Name: <input type="text" name="name" /></label>   
+						  </p>
+						  <p>
+						    <label>Your Email: <input type="email" name="email" /></label>
+						  </p>
+						  <p>
+						    <label>Your Role: <select name="role[]" multiple>
+						      <option value="leader">Leader</option>
+						      <option value="follower">Follower</option>
+						    </select></label>
+						  </p>
+						  <p>
+						    <label>Message: <textarea name="message"></textarea></label>
+						  </p>
+						  <p>
+						    <button type="submit">Send</button>
+						  </p>
+						</form>
 			  
 				   	<a id="contact-mail" class="btn btn-outline-primary my-3 animated disappear" href="mailto:lenmuel.dlrs@gmail.com"><i class="far fa-envelope"></i> Send me a message</a>
 
@@ -266,6 +287,7 @@
 	      </div>
 	    </div>
 	</footer>
+	
 	<!-- progress bar  -->
 	<script src="assets/progressbar/js/jquery-asPieProgress.js"></script>
 	<script src="assets/progressbar/js/progressbar.js"></script>
