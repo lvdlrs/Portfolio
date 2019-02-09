@@ -45,7 +45,7 @@ $(document).ready(function(){
 				})
 				
 			}).then(function(e){
-				$form.reset();
+				$('form#reused_form').reset();
 			});
 	   });
 	 
