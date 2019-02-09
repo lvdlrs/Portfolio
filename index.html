@@ -36,8 +36,6 @@
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	
-	<script src="assets/js/form.js"></script>
 </head>
 <body>
 	<!-- header start-->
@@ -255,8 +253,8 @@
 						      
 					      	<div class="modal-body text-left">
 					      		
-         						<form role="form" name="contact" method="POST" netlify-honeypot="bot-field" netlify id="reused_form">
-         							<p class="u-visually-hidden">
+         						<form action="/thanks" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+         						  <p class="hidden">
 									    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
 									  </p>
 						           <div class="form-group">
@@ -277,9 +275,6 @@
 								        <button type="submit" class="btn btn-primary" data>Send</button>
 								     </div>
 									</form>
-									
-									<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
-                           <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
 						     </div>
 							</div>
 						 </div>

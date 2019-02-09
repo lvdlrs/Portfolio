@@ -216,6 +216,10 @@ em{
 	font-size: 1.25rem;
 }
 
+#contact .hidden{
+	display: none;
+}
+
 /*footer*/
 .bg-foot{
 	background-color: #d8dcdf;
