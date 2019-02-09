@@ -37,11 +37,13 @@ $(document).ready(function(){
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	        	
 	        	Swal.fire({
+				  title: 'Message Sent Successfully',
 				  type: 'success',
-				  title: 'Message sent Successfully',
-				  showConfirmButton: true,
-				  timer: 1500
-				})
+				}, function(){
+					swal.close();
+					$('form#reused_form').val('');
+						
+				});
 				
 			});
 			
