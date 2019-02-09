@@ -42,6 +42,7 @@ $(document).ready(function(){
 				  position: 'top-end',
 				  showConfirmButton: false,
 				  timer: 2000,
+				  target: '#reused_form',
 				  onClose: ()=>{
 				  	$form.reset();
 				  }
