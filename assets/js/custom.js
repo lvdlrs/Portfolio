@@ -45,7 +45,7 @@ $(document).ready(function(){
 				})
 				
 			}).then(function(e){
-				$('form#reused_form').reset();
+				$form.find('input:text, input:email, textarea').val('');
 			});
 	   });
 	 
