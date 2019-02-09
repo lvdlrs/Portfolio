@@ -47,9 +47,10 @@ $(document).ready(function(){
 				  title: 'Message sent Successfully'
 				});
 				
-				$form.reset();
-				return false;
 	        });
+	       
+	        	$form.reset();
+				return false;
 	    });
 	    
 	  
