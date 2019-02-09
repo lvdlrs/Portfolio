@@ -253,7 +253,7 @@
 						      
 					      	<div class="modal-body text-left">
 					      		
-         						<form action="/success.html" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+         						<form onSubmit="return doSomething();" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
          						  <p class="hidden">
 									    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
 									  </p>
@@ -318,7 +318,10 @@
 	<!-- progress bar  -->
 	<script src="assets/progressbar/js/jquery-asPieProgress.js"></script>
 	<script src="assets/progressbar/js/progressbar.js"></script>
-
+	
+	<!--swal fire-->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	
 	<!-- custom JS -->
 	<script src="assets/js/custom.js"></script>
 	
