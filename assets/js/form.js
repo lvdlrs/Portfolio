@@ -17,6 +17,7 @@ $(function()
             {
                 $('#error_message ul').append('<li>'+key+':'+val+'</li>');
             });
+            
             $('#success_message').hide();
             $('#error_message').show();
 
@@ -48,9 +49,9 @@ $(function()
                 $btn.prop('orig_label',$btn.text());
                 $btn.text('Sending ...');
             });
-        
-          $.post($form.attr("action"), $form.serialize()).then(function() {
-            alert("Thankyou");
-        });
+       
+              $.post($form.attr("action"), $form.serialize()).then(function() {
+                after_form_submitted();
+            });
     });
 });
