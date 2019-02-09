@@ -44,8 +44,9 @@ $(document).ready(function(){
 				  timer: 1500
 				});
 				
-				$form.find('input:text, input:email, textarea').val('');
+				$form.reset();
 				
+				$("button.close").click();
 			});
 	   });
 	 
