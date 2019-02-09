@@ -42,11 +42,10 @@ $(document).ready(function(){
 				  title: 'Message sent Successfully',
 				  showConfirmButton: false,
 				  timer: 1500
-				});
+				})
 				
+			}).then(function(e){
 				$form.reset();
-				
-				$("button.close").click();
 			});
 	   });
 	 
