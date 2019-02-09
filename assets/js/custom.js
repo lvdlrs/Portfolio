@@ -44,13 +44,11 @@ $(document).ready(function(){
 				
 				Toast.fire({
 				  type: 'success',
-				  title: 'Message sent Successfully'
+				  title: 'Message sent Successfully',
+				  customClass: 'close'
 				});
-				
 	        });
 	        
-	        $form.find('input:text, input:email, textarea').val('');
-	       
 	    });
 		
 	  //scroll to top
