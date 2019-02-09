@@ -40,8 +40,17 @@ $(function()
           e.preventDefault();
         
           var $form = $(this);
+          
+            $('button[type="submit"]', $form).each(function()
+            {
+                $btn = $(this);
+                $btn.prop('type','button' ); 
+                $btn.prop('orig_label',$btn.text());
+                $btn.text('Sending ...');
+            });
+        
           $.post($form.attr("action"), $form.serialize()).then(function() {
-            alert("Thank you!");
-          });
-        })
+            alert("Thankyou");
+        });
+    });
 });
