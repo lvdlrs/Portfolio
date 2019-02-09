@@ -37,16 +37,14 @@ $(document).ready(function(){
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	        	
 	        	Swal.fire({
-	        	  position: 'top-end',
 				  type: 'success',
 				  title: 'Message sent Successfully',
-				  showConfirmButton: false,
+				  showConfirmButton: true,
 				  timer: 1500
 				})
 				
-			}).then(function(e){
-				$form.find('input:text, input:email, textarea').val('');
 			});
+			
 	   });
 	 
 		
