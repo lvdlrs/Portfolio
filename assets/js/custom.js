@@ -37,16 +37,14 @@ $(document).ready(function(){
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	        	
 	        	Swal.fire({
+	        	  position: 'top-end',
 				  type: 'success',
 				  title: 'Message sent Successfully',
-				  position: 'top-end',
 				  showConfirmButton: false,
-				  timer: 2000,
-				  target: '#reused_form',
-				  onClose: ()=>{
-				  	$form.reset();
-				  }
+				  timer: 1500
 				});
+				
+				$form.find('input:text, input:email, textarea').val('');
 				
 			});
 	   });
