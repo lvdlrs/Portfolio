@@ -38,248 +38,58 @@
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 <body>
-	<!-- header start-->
-	<header id="top" class="auto-view">
-		<div class="jumbotron jumbotron-fluid full-view">
-			<div class="container text-sm">
-			    <h1 class="display-1 top-dur animated bounceInLeft">Hi, I'm Lenmuel</h1>
-			    <p class="mbet-sm lead top-dur animated bounceInRight">an Engineer and Web Developer</p>
 
-				<div class="mt-2">
-					<a class="ml-2 font2 btn btn-outline-secondary rounded-circle top-dur animated bounceInDown" href="mailto:lenmuel.dlrs@gmail.com">
-		              <i class="fas fa-envelope"></i>
-		            </a>
-					
-					<a class="ml-2 font2 btn btn-outline-secondary rounded-circle top-dur animated bounceInUp" href="https://www.facebook.com/lenmuel.delrosario.3" target="_blank"><i class="fab fa-facebook-square"></i></a>
-
-		            <a class="ml-2 font2 btn btn-outline-secondary rounded-circle top-dur animated bounceInDown" href="https://www.linkedin.com/in/lenmueldelrosario/" target="_blank">
-		              <i class="fab fa-fw fa-linkedin-in"></i>
-		            </a>
-
-		            <a class="ml-2 font2 btn btn-outline-secondary rounded-circle top-dur animated bounceInUp" href="https://github.com/lvdlrs" target="_blank">
-		              <i class="fab fa-github"></i>
-		            </a>
-
-		           	<a class="ml-2 font2 btn btn-outline-secondary rounded-circle top-dur animated bounceInDown" href="https://discord.gg/XB9RGJK" target="_blank">
-		             <i class="fab fa-discord"></i>
-		            </a>
-				</div>
-
-				<div class="mt-3 top-dur animated bounceInDown">
-					<a class="btn btn-outline-secondary" href="projects.html">View My Projects</a>
-				</div>
-			    
-				<div class="position-absolute pos">
-					<div id="hov" class="text-center">
-						<p class="disappear mb-2">Scroll Down</p>
-						<a class="font3 icon-dur animated fadeInDown infinite" href="#about-me"><i class="fas fa-angle-double-down"></i></a>
-					</div>		
-				</div>	            	            
-			</div>	
+<!-- contact -->
+<div id="contact">
+<div class="text-center mt-2">
+   <h2 id="contact-head" class="display-3 text-center text-shadow mb-3 animated disappear">Contact Me</h2>
+   <h3 id="contact-subhead" class="display-2 animated disappear">Let's Work Together</h3>
+   
+	<button id="contact-mail" type="button" class="btn btn-outline-primary my-3 animated disappear" data-toggle="modal" data-target="#myModal">
+	  <i class="far fa-envelope"></i> Send me a message
+	</button>
+	
+	 <!--Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Send me a Message!</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      
+      	<div class="modal-body text-left">
+      		
+ 			<form action="/success.html" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+ 			  <p class="hidden">
+				    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+				  </p>
+	           <div class="form-group">
+				    <label for="name"> Name:</label>
+				    <input type="text" name="name" class="form-control" placeholder="Hello, my friend" id="name" name="name" required maxlength="50"/>  
+				  </div>
+				  <div class="form-group">
+				    <label for="email"> Email:</label>
+				    <input type="email" name="email" class="form-control" placeholder="I will contact you with this email" required maxlength="50"/>
+				  </div>
+				  <div class="form-group">
+				    <label for="message"> Message:</label>
+				    <textarea name="message" class="form-control" placeholder="Thank you so much for giving your time messaging me." maxlength="6000" rows="7"></textarea>
+				  </div>
+				  
+          <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        <button type="submit" class="btn btn-primary" data>Send</button>
+			     </div>
+				</form>
+	     </div>
 		</div>
-	</header> 
-	<!-- header end -->
+	 </div>
+  </div>
 
-	<!-- main body start -->
-	<main class="container">	
-		<!-- about me -->
-		<div id="about-me">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<figure>
-						<img id="about-me-img" class="img-fluid s-200 animated disappear" src="img/profpic.gif" alt="Profile picture">
-					</figure>
-
-					<p id="about-me-text" class="font2 mbet animated disappear">I am <span class="font-weight-bold">Mechatronics Engineer</span> by discipline and a <span class="font-weight-bold">self-taught Web Developer</span> who resides in the Philippines. I love concepting things, design and implement it. I am cheerful and family-oriented. I love being critisize constructively. And I love to share my ideas and knowledge to everyone.</p>
-
-					<a id="about-me-resume" class="btn btn-outline-secondary animated disappear" href="https://drive.google.com/file/d/1dqBxDttx4vBddtyaBIpEa7-E-K57g6lv/view?usp=sharing" target="_blank">Download Resume.pdf</a>
-				</div>
-			</div>
-		</div>
-
-		<hr class="style-two">
-		<!-- verse -->
-		<div id="verse" class="mbet animated disappear">
-			<div class="text-box">
-				<div class="text-center">
-					<p class="font4 mb-0"><i class="fas fa-quote-left"></i> It is not our abilities that show what we truly are… it is our choices.<i class="fas fa-quote-right"></i></p>
-					<em class="font2">– Dumbledore, from Harry Potter and the Chamber of Secrets</em>					
-				</div>				
-			</div>
-		</div>
-
-		<hr class="style-two">
-
-		<!-- what I can Do -->
-		<div id="what-i-do" class="mbet">
-			<h2 id="what-i-do-head" class="display-3 text-center text-shadow mb-md-5 mb-3 animated disappear">What I can do.</h2>
-
-			<div class="text-sm">
-				<div class="row mbet">
-					<div class="col-md-4 animated disappear" id="what-i-do-img1">
-						<img class="img-fluid shades" src="img/idea.jpg" alt="bulb">
-					</div>
-
-					<div class="col-md-8 animated disappear mbet" id="what-i-do-img1text">
-						<h2>Make your idea into reality</h2>
-						<p class="font2 font-h">I'm glad to hear your bright ideas and make it into reality that will convey the message you want to send.</p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-8 order-2 order-md-1 animated disappear mbet" id="what-i-do-img2text">
-						<h2>Make your reality functional</h2>
-						<p class="font2 font-h">I'm a developer, so I know how to create functional websites across any devices using the latest technologies available.</p>
-					</div>
-
-					<div class="col-md-4 order-1 order-md-2 animated disappear" id="what-i-do-img2">
-						<img class="img-fluid shades" src="img/laptop-and-phone.jpg" alt="Laptop and Phone">
-					</div>
-				</div>
-			</div>
-		</div>	
-
-		<div class="d-lg-none d-md-block">
-			<div class="text-center">
-				<p class="font2 text-secondary">View the website on PC for more cool animations and content!</p>
-			</div>
-		</div>
-
-		<div class="d-none d-lg-block">
-			<hr class="style-two">
-
-			<!-- why me? -->
-			<div id="why-me">
-				<h2 id="why-me-head" class="display-3 text-center text-shadow mb-5 animated disappear">Why Me?</h2>
-				<div class="text-sm">
-					<div class="row">
-						<div class="col-md-6">
-							<img id="why-me-img1" class="img-fluid img-size px-5 drop-shadow animated disappear" src="img/effort.png" alt="effort symbol">
-						</div>
-
-						<div class="col-md-6 animated disappear" id="why-me-img1text">
-							<h2>My 101% Effort</h2>
-							<p class="font2 font-h">I dedicated 101% effort in my work to make it done right and in an excellent way.</p>
-						</div>
-					</div>
-
-					<div class="row mbet">
-						<div class="col-md-6">
-							<img id="why-me-img2" class="img-fluid img-size px-5 drop-shadow animated disappear" src="img/time.png" alt="time">
-						</div>
-
-						<div class="col-md-6 animated disappear" id="why-me-img2text">
-							<h2>Time is GOLD</h2>
-							<p class="font2 font-h">Every second around the clock matters to me.</p>
-						</div>
-					</div>
-
-					<div class="row mbet">
-						<div class="col-md-6">
-							<img id="why-me-img3" class="img-fluid img-size px-5 drop-shadow animated disappear" src="img/strategy.png" alt="partnership">
-						</div>
-
-						<div class="col-md-6 animated disappear" id="why-me-img3text">
-							<h2>Partnership</h2>
-							<p class="font2 font-h">My missions are to build long lasting partnership and satisfaction.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<hr class="style-two">
-
-			<!-- skill -->
-			<div id="skill" class="animated disappear mbet">
-				<div class="jumbotron">
-				    <div class="row text-center justify-content-center">
-				        <div class="col-md-2">
-					        <div class="pie_progress" role="progressbar" data-goal="100">
-					          <div class="pie_progress__number">0%</div>
-					          <div class="pie_progress__label">HTML</div>
-					        </div>
-				        </div>
-				        <div class="col-md-2">
-				        	<div class="pie_progress" role="progressbar" data-goal="80">
-					          <div class="pie_progress__number">0%</div>
-					          <div class="pie_progress__label">CSS</div>
-					        </div>
-				        </div>
-				        <div class="col-md-2">
-				            <div class="pie_progress" role="progressbar" data-goal="60">
-					          <div class="pie_progress__number">0%</div>
-					          <div class="pie_progress__label">Javascript</div>
-					        </div>
-				        </div>
-				     	<div class="col-md-2">
-				            <div class="pie_progress" role="progressbar" data-goal="70">
-					          <div class="pie_progress__number">0%</div>
-					          <div class="pie_progress__label">Bootstrap Framework</div>
-					        </div>
-				        </div>
-				        <div class="col-md-2">
-				            <div class="pie_progress" role="progressbar" data-goal="60">
-					          <div class="pie_progress__number">0%</div>
-					          <div class="pie_progress__label">JQuery</div>
-					        </div>
-				        </div>
-				    </div>					
-				</div>		
-			</div>
-
-			<hr class="style-two">
-
-			<!-- contact -->
-			<div id="contact">
-			   <div class="text-center mt-2">
-			   		<h2 id="contact-head" class="display-3 text-center text-shadow mb-3 animated disappear">Contact Me</h2>
-				   	<h3 id="contact-subhead" class="display-2 animated disappear">Let's Work Together</h3>
-				   	
-						<button id="contact-mail" type="button" class="btn btn-outline-primary my-3 animated disappear" data-toggle="modal" data-target="#myModal">
-						  <i class="far fa-envelope"></i> Send me a message
-						</button>
-						
-						 <!--Modal -->
-						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						  <div class="modal-dialog" role="document">
-						    <div class="modal-content">
-						    	
-						      <div class="modal-header">
-						        <h5 class="modal-title" id="exampleModalLabel">Send me a Message!</h5>
-						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						          <span aria-hidden="true">&times;</span>
-						        </button>
-						      </div>
-						      
-					      	<div class="modal-body text-left">
-					      		
-         						<form action="/success.html" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
-         						  <p class="hidden">
-									    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-									  </p>
-						           <div class="form-group">
-									    <label for="name"> Name:</label>
-									    <input type="text" name="name" class="form-control" placeholder="Hello, my friend" id="name" name="name" required maxlength="50"/>  
-									  </div>
-									  <div class="form-group">
-									    <label for="email"> Email:</label>
-									    <input type="email" name="email" class="form-control" placeholder="I will contact you with this email" required maxlength="50"/>
-									  </div>
-									  <div class="form-group">
-									    <label for="message"> Message:</label>
-									    <textarea name="message" class="form-control" placeholder="Thank you so much for giving your time messaging me." maxlength="6000" rows="7"></textarea>
-									  </div>
-									  
-	                          <div class="modal-footer">
-								        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								        <button type="submit" class="btn btn-primary" data>Send</button>
-								     </div>
-									</form>
-						     </div>
-							</div>
-						 </div>
-					  </div>
-			
 
 	<!-- footer start -->
 	<footer class="bg-foot">
@@ -297,7 +107,5 @@
 	<!-- custom JS -->
 	<script src="assets/js/custom.js"></script>
 	
-<noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
-
 </body>
 </html>
