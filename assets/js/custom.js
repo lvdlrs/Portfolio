@@ -45,7 +45,6 @@ $(document).ready(function(){
 				Toast.fire({
 				  type: 'success',
 				  title: 'Message sent Successfully',
-				  timer: 1500,
 				  onClose: ()=>{
 				  	$form.reset();
 				  }
