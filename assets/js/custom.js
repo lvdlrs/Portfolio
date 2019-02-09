@@ -33,6 +33,8 @@ $(document).ready(function(){
 	      e.preventDefault();
 	    
 	      var $form = $(this);
+	      
+	      $form.find('input:text, input:email, textarea').val('');
 		  
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	          const Toast = Swal.mixin({
@@ -47,7 +49,6 @@ $(document).ready(function(){
 				  title: 'Message sent Successfully'
 				});
 				
-				$form.find('input:text, input:email, textarea').val('');
 	        });
 	       
 	    });
