@@ -51,9 +51,9 @@ $(function()
         });
         
 
-                    $.ajax({
+                $.ajax({
                 type: "POST",
-                url: 'handler.php',
+                url: '/page/success',
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'json' 
