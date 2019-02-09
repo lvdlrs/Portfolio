@@ -45,7 +45,10 @@ $(document).ready(function(){
 				Toast.fire({
 				  type: 'success',
 				  title: 'Message sent Successfully'
-				})
+				});
+				
+				$form.reset();
+				return false;
 	        });
 	    });
 	    
