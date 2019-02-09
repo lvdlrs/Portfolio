@@ -44,8 +44,9 @@ $(document).ready(function(){
 				
 				Toast.fire({
 				  type: 'success',
-				  title: 'Message sent Successfully',
-				  customClass: 'close'
+				  title: 'Message sent Successfully'
+				}, function(){
+					$form.reset();
 				});
 	        });
 	        
