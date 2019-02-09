@@ -35,16 +35,13 @@ $(document).ready(function(){
 	      var $form = $(this);
 		  
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
-	          const Toast = Swal.mixin({
-				  toast: true,
-				  position: 'top-end',
-				  showConfirmButton: false,
-				  timer: 3000
-				});
-				
-				Toast.fire({
+	        	
+	        	Swal.fire({
 				  type: 'success',
 				  title: 'Message sent Successfully',
+				  position: 'top-end',
+				  showConfirmButton: false,
+				  timer: 2000,
 				  onClose: ()=>{
 				  	$form.reset();
 				  }
