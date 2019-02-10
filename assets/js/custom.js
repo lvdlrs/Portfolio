@@ -29,21 +29,26 @@ $(document).ready(function(){
 	  });
 	  
 	  //form javascript
-	  $("#reused_form").submit(function(e) {
+	  $("#reused_form").on('submit', function(e) {
 	      e.preventDefault();
 	    
 	      var $form = $(this);
 		  
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	        	
-	        	Swal.fire({
-				  title: 'Message Sent Successfully',
-				  type: 'success',
-				}, function(){
-					swal.close();
-					$('form#reused_form').val('');
-						
-				});
+	        	swal({
+			        title: "Are you sure?",
+			        text: "Message Sent Success",
+			        type: "Success",
+			        customClass: "btn btn-success"
+			    }).then((result) => {
+			        if (result.value) {
+			          $("#name").val("");
+			        	$("#email").val("");
+			        		$("textarea").val("");
+			        }
+
+			      });
 				
 			});
 			
