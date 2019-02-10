@@ -36,24 +36,14 @@ $(document).ready(function(){
 		  
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	        	
-	        	const Toast = Swal.mixin({
-				  toast: true,
-				  position: 'top-end',
-				  showConfirmButton: false,
-				  timer: 1500
-				});
-					        	
-	        	
-	        	Toast.fire({
+	        	Swal.fire({
 			        text: 'Message sent successfully',
 			        type: 'success',
-			        // confirmButtonClass: 'btn btn-outline-success',
-			        // confirmButtonText: 'Thank you!'
+			        confirmButtonClass: 'btn btn-outline-success',
+			        confirmButtonText: 'Thank you!'
 			    }).then((result) => {
 			        if (result.value) {
-			          $("#name").val("");
-			    	  $("#email").val("");
-			          $("textarea").val("");
+			          $('form').val('').hide();
 			         }else {
 			            Swal.fire({
 			            	text: 'Sending Error!',
