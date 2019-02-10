@@ -48,7 +48,6 @@ $(document).ready(function(){
 			          $("textarea").val("");
 			          $('#myModal').modal('toggle');
 			          return false;
-			          })
 			         }else {
 			            Swal.fire({
 			            	text: 'Sending Error!',
