@@ -39,8 +39,8 @@ $(document).ready(function(){
 	        	Swal.fire({
 			        title: "Are you sure?",
 			        text: "Message Sent Success",
-			        type: "Success",
-			        customClass: "btn btn-success"
+			        type: "success",
+			        confirmButtonClass: "btn btn-outline-success"
 			    }).then((result) => {
 			        if (result.value) {
 			          $("#name").val("");
