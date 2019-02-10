@@ -62,11 +62,8 @@ $(document).ready(function(){
 			    	  $("#email").val("");
 			          $("textarea").val("");
 			          
-			          $.ajax({
-						type: "POST",
-						success: function() {
-						grecaptcha.reset();     
-						}})
+			          grecaptcha.reset();     
+			          
 			          return false;
 			         }else {
 			            Swal.fire({
