@@ -43,9 +43,9 @@ $(document).ready(function(){
 			        confirmButtonText: 'Thank you!'
 			    }).then((result) => {
 			        if (result.value) {
-			       //   $("#name").val("");
-			    	  //$("#email").val("");
-			       //   $("textarea").val("");
+			          $("#name").val("");
+			    	  $("#email").val("");
+			          $("textarea").val("");
 			          $('#myModal').modal('toggle');
 			          return false;
 			         }else {
