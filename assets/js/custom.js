@@ -37,15 +37,16 @@ $(document).ready(function(){
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	        	
 	        	Swal.fire({
-			        title: "Are you sure?",
-			        text: "Message Sent Success",
-			        type: "success",
-			        confirmButtonClass: "btn btn-outline-success"
+			        title: 'Are you sure?',
+			        text: 'Message sent successfully',
+			        type: 'success',
+			        confirmButtonClass: 'btn btn-outline-success',
+			        confirmButtonText: 'Thank you!'
 			    }).then((result) => {
 			        if (result.value) {
 			          $("#name").val("");
-			        	$("#email").val("");
-			        		$("textarea").val("");
+			    	  $("#email").val("");
+			          $("textarea").val("");
 			        }
 
 			      });
