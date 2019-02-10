@@ -33,10 +33,21 @@ $(document).ready(function(){
 	      e.preventDefault();
 	    
 	      var $form = $(this);
+	      
+	      $('button[type="submit"]', $form).each(function()
+	        {
+	            $btn = $(this);
+	            $btn.prop('type','button' ); 
+	            $btn.prop('orig_label',$btn.text());
+	            $btn.text('Sending ...');
+	        });
 		  
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
-	        	
-	        	Swal.fire({
+	        	const bootstrapButtons = Swal.mixin({
+				  confirmButtonClass: 'btn btn-outline-success',
+				  buttonsStyling: false,
+				})
+	        	bootstrapButtons.fire({
 			        text: 'Message sent successfully',
 			        type: 'success',
 			        confirmButtonClass: 'btn btn-outline-success',
