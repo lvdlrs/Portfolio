@@ -43,7 +43,12 @@ $(document).ready(function(){
 			        confirmButtonText: 'Thank you!'
 			    }).then((result) => {
 			        if (result.value) {
-			          $('form').val('');
+			          $("#name").val("");
+			    	  $("#email").val("");
+			          $("textarea").val("");
+			          $("#reused_form").hide('fast', function(){
+			          	$(this).show();
+			          })
 			         }else {
 			            Swal.fire({
 			            	text: 'Sending Error!',
