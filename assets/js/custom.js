@@ -43,10 +43,14 @@ $(document).ready(function(){
 	        });
 		  
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
+	        	
+	        	  $('#myModal').modal('toggle');
+	        	
 	        	const bootstrapButtons = Swal.mixin({
 				  confirmButtonClass: 'btn btn-outline-success',
 				  buttonsStyling: false,
 				})
+				
 	        	bootstrapButtons.fire({
 			        text: 'Message sent successfully',
 			        type: 'success',
@@ -57,7 +61,6 @@ $(document).ready(function(){
 			          $("#name").val("");
 			    	  $("#email").val("");
 			          $("textarea").val("");
-			          $('#myModal').modal('toggle');
 			          return false;
 			         }else {
 			            Swal.fire({
