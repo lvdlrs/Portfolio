@@ -46,7 +46,7 @@ $(document).ready(function(){
 			          $("#name").val("");
 			    	  $("#email").val("");
 			          $("textarea").val("");
-			          $("#reused_form").hide('fast', function(){
+			          $("form").hide('fast', function(){
 			          	$(this).show();
 			          })
 			         }else {
