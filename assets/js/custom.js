@@ -43,7 +43,7 @@ $(document).ready(function(){
 			        confirmButtonText: 'Thank you!'
 			    }).then((result) => {
 			        if (result.value) {
-			          $('form').val('').hide();
+			          $('form').val('');
 			         }else {
 			            Swal.fire({
 			            	text: 'Sending Error!',
