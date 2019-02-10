@@ -46,8 +46,8 @@ $(document).ready(function(){
 			          $("#name").val("");
 			    	  $("#email").val("");
 			          $("textarea").val("");
-			          $("form").hide('fast', function(){
-			          	$(this).show();
+			          $('#myModal').modal('toggle');
+			          return false;
 			          })
 			         }else {
 			            Swal.fire({
