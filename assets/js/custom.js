@@ -36,7 +36,7 @@ $(document).ready(function(){
 		  
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	        	
-	        	swal({
+	        	Swal.fire({
 			        title: "Are you sure?",
 			        text: "Message Sent Success",
 			        type: "Success",
