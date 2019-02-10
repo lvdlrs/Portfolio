@@ -64,6 +64,18 @@ $(document).ready(function(){
 			          
 			          grecaptcha.reset();     
 			          
+			          $('button[type="button"]', $form).each(function()
+			            {
+			                $btn = $(this);
+			                label = $btn.prop('orig_label');
+			                if(label)
+			                {
+			                    $btn.prop('type','submit' ); 
+			                    $btn.text(label);
+			                    $btn.prop('orig_label','');
+			                }
+			            });
+			          
 			          return false;
 			         }else {
 			            Swal.fire({
