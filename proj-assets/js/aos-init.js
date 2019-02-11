@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	
+	setTimeout(function(){
+		$('#preload').removeClass('se-pre-con')
+	}, 1000);
+	
 	AOS.init();
 
 	// You can also pass an optional settings object
