@@ -211,7 +211,7 @@ $(document).ready(function(){
 	  });
 	  
 	  //form javascript
-	  $("#reused_form").on('submit', function(e) {
+	  $("#reused_form1, #reused_form2").on('submit', function(e) {
 	      e.preventDefault();
 	    
 	      var $form = $(this);
@@ -226,7 +226,7 @@ $(document).ready(function(){
 		  
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	        	
-	        	  $('#myModal').modal('toggle');
+	        	  $('#myModal1, #myModal2').modal('toggle');
 	        	
 	        	const bootstrapButtons = Swal.mixin({
 				  confirmButtonClass: 'btn btn-outline-success',
