@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-	$(window).on('load', function(){
+	setTimeout(function(){
 		$('#preload').removeClass('se-pre-con');
-	})
+	}, 1500);
 		
 
 // animation script
@@ -212,7 +212,7 @@ $(document).ready(function(){
 	  });
 	  
 	  //form javascript
-	  $("#reused_form1, #reused_form2").on('submit', function(e) {
+	  $("#reused_form").on('submit', function(e) {
 	      e.preventDefault();
 	    
 	      var $form = $(this);
@@ -227,7 +227,7 @@ $(document).ready(function(){
 		  
 	        $.post($form.attr("action"), $form.serialize()).then(function() {
 	        	
-	        	  $('#myModal1, #myModal2').modal('toggle');
+	        	  $('#myModal').modal('toggle');
 	        	
 	        	const bootstrapButtons = Swal.mixin({
 				  confirmButtonClass: 'btn btn-outline-success',
