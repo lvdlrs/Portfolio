@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
-	setTimeout(function(){
-		$('#preload').removeClass('se-pre-con')
-	}, 1000);
+	$(window).on('load', function(){
+		$('#preload').removeClass('se-pre-con');
+	})
+		
 
 // animation script
 	jQuery.fn.isFullyVisible = function(){
