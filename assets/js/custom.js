@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-	setTimeout(function(){
+	$(window).load(function(){
 		$('#preload').removeClass('se-pre-con');
-	}, 1500);
+	})
 		
 
 // animation script
