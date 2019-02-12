@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$(window).load(function(){
-		$('.se-pre-con').fadeOut('1500');
+		$('.se-pre-con').fadeOut('1500', function(){});
 	})
 		
 
